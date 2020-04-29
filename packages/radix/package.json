@@ -21,7 +21,8 @@
     "watch": "rollup -cw",
     "link-primitives": "yalc add mdlz-prmtz && yarn",
     "unlink-primitives": "yalc remove mdlz-prmtz && yarn",
-    "prepublishOnly": "yarn build"
+    "prepublishOnly": "yarn build",
+    "chromatic": "chromatic --project-token=8r7avv4lds"
   },
   "peerDependencies": {
     "react": "^16.12.0",
@@ -49,6 +50,7 @@
     "@types/react-dom": "^16.9.4",
     "@types/styled-components": "^5.0.1",
     "babel-loader": "8.0.6",
+    "chromatic": "^4.0.2",
     "csstype": "^2.6.7",
     "rollup": "^1.27.12",
     "rollup-plugin-typescript2": "^0.25.3",
