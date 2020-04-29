@@ -9,6 +9,7 @@ jobs:
       - run: |
           yarn && yarn build
       - uses: chromaui/action@v1
+        working-directory: ./packages/radix
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           token: ${{ secrets.GITHUB_TOKEN }}
