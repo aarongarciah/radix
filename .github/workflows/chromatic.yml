@@ -7,10 +7,9 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - run: |
-          yarn && yarn build
+          yarn && yarn build && radix:storybook:build
       - uses: chromaui/action@v1
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           token: ${{ secrets.GITHUB_TOKEN }}
-          buildScriptName: 'radix:storybook:build'
           storybookBuildDir: 'packages/radix/storybook-static'
