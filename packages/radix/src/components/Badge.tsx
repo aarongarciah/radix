@@ -38,7 +38,7 @@ export const Badge = React.forwardRef<HTMLSpanElement, BadgeProps>((props, forwa
             gray: {
               badge: {
                 normal: {
-                  boxShadow: `inset 0 0 0 1px ${theme.colors.gray900}`,
+                  boxShadow: `inset 0 0 0 1px ${theme.colors.gray300}`,
                   color: theme.colors.gray800,
                 },
               },
