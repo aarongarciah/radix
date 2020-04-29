@@ -47,7 +47,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
             gray: {
               button: {
                 normal: {
-                  backgroundColor: theme.colors.gray100,
+                  backgroundColor: theme.colors.red500,
                   boxShadow: `inset 0 0 0 1px ${theme.colors.gray400}`,
                   color: theme.colors.gray800,
                 },
